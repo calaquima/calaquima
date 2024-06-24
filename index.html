@@ -7,8 +7,6 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Bodo - Simple One Page Personal" name="description">
     <meta content="BdgPixel" name="author">
-    <!--Fav-->
-    <link href="images/favicon.ico" rel="shortcut icon">
     
     <!--styles-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +15,7 @@
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-    
+
     <!--fonts google-->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
@@ -39,21 +37,6 @@
           <a href="index.html"><img alt="logo" class="logo-nav" src="images/logo.png"></a>
         </div>
         <!--/.LOGO END-->
-      </div>
-      <div class="header-left">
-        <div class="language-dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Language
-          </button>
-          <div class="dropdown-menu" aria-labelledby="languageDropdown">
-            <ul class="list-unstyled">
-              <li><a class="dropdown-item" href="#" data-lang="ca">Català</a></li>
-              <li><a class="dropdown-item" href="#" data-lang="es">Español</a></li>
-              <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
-              <li><a class="dropdown-item" href="#" data-lang="fr">Français</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
       <div class="menu-wrap">
         <nav class="menu">
@@ -82,9 +65,25 @@
             <a data-scroll="" href="#contacte">
               <span>Contacte</span>
             </a>
+            <!--LANGUAGE PICKER-->
+            <a data-scroll="" >
+              <span>
+                <div class="language-picker js-language-picker" data-trigger-class="li4-btn li4-btn--subtle js-tab-focus">
+                  <form action="" class="language-picker__form">
+                    <label style="display:block" for="language-picker-select"></label>
+                    <select name="language-picker-select" id="language-picker-select">
+                      <option lang="ca" value="catalan" selected><i class="flag-spain flag"></i>Català</option>
+                      <option lang="es" value="spanish"><i class="flag-spain flag"></i>Español</option>
+                      <option lang="en" value="english"><i class="flag-united-kingdom flag"></i>English</option>
+                      <option lang="fr" value="francais"><i class="flag-france flag"></i>Français</option>
+                    </select>
+                  </form>
+                </div>
+              </span>
+            </a>
+            <!--/.LANGUAGE PICKER END-->
           </div>
         </nav>
-        <button class="close-button" id="close-button">Close Menu</button>
       </div>
       <button class="menu-button" id="open-button">
         <span></span>
@@ -177,12 +176,12 @@
                         <p class="text-grey">
                           En tots els apartaments podreu trobar WiFi gratuït, aire acondicionat i calefacció.
                           <br>
-                          Cuines equipades amb dues cafeteres (mocha i de càpsules), rentavaixelles i sabó pels
+                          Cuines equipades amb dues cafeteres (mocha i càpsules), rentavaixelles i sabó pels
                           plats.
                           <br>
                           Banys amb tovalloes, gel de dutxa, xampú i assecador de cabell.
                           <br>
-                          A més a més, també hi ha disponibles una rentadora amb el seu sabó i una planxa per a la roba.
+                          A més a més, també hi ha disponibles una rentadora amb sabó i una planxa per a la roba.
                         </p>
                       </div>
                     </li>
@@ -198,7 +197,7 @@
         <section class="grey-bg" id="calaquima">
           <div class="container">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <h3 class="title-small">
                   <span>Ca la Quima</span>
                 </h3>
@@ -206,107 +205,22 @@
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                 </p>
               </div>
-              <div class="col-md-9 content-right">
-                <div class="row">
-                  <ul class="listing-item">
-                    <li>
-                      <div class="col-md-6 col-sm-6">
-                        <div class="wrap-card">
-                          <div class="card">
-                            <h2 class="year">
-                              2007 - 2009
-                            </h2>
-                            <p class="job">
-                              web designer
-                            </p>
-                            <p class="company">
-                              Corp Project
-                            </p>
-                            <hr>
-                            <div class="text-detail">
-                              <p>
-                                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="col-md-6 col-sm-6">
-                        <div class="wrap-card">
-                          <div class="card">
-                            <h2 class="year">
-                              2009 - 2010
-                            </h2>
-                            <p class="job">
-                              web designer
-                            </p>
-                            <p class="company">
-                              Google inc
-                            </p>
-                            <hr>
-                            <div class="text-detail">
-                              <p>
-                                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>  
-                  <ul class="listing-item">
-                    <li>
-                      <div class="col-md-6 col-sm-6">
-                        <div class="wrap-card">
-                          <div class="card">
-                            <h2 class="year">
-                              2010 - 2014
-                            </h2>
-                            <p class="job">
-                              crative director 
-                            </p>
-                            <p class="company">
-                              41 studio
-                            </p>
-                            <hr>
-                            <div class="text-detail">
-                              <p>
-                                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="col-md-6 col-sm-6">
-                        <div class="wrap-card">
-                          <div class="card">
-                            <h2 class="year">
-                              2014 - NOW
-                            </h2>
-                            <p class="job">
-                              fullstack designer
-                            </p>
-                            <p class="company">
-                              Freelance
-                            </p>
-                            <hr>
-                            <div class="text-detail">
-                              <p>
-                                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-
+              <div class="col-md-8">
+                <div class="owl-carousel2">
+                  <div class="col-md-12"><img src="images/calaquima01.jpg" alt="CaLaQuima01"></div>
+                  <div class="col-md-12"><img src="images/calaquima02.jpg" alt="CaLaQuima02"></div>
+                  <div class="col-md-12"><img src="images/calaquima03.jpg" alt="CaLaQuima03"></div>
+                  <div class="col-md-12"><img src="images/calaquima04.jpg" alt="CaLaQuima04"></div>
+                  <div class="col-md-12"><img src="images/calaquima05.jpg" alt="CaLaQuima05"></div>
+                  <div class="col-md-12"><img src="images/calaquima06.jpg" alt="CaLaQuima06"></div>
+                  <div class="col-md-12"><img src="images/calaquima07.jpg" alt="CaLaQuima07"></div>
+                  <div class="col-md-12"><img src="images/calaquima08.jpg" alt="CaLaQuima08"></div>
+                  <div class="col-md-12"><img src="images/calaquima09.jpg" alt="CaLaQuima09"></div>
+                  <div class="col-md-12"><img src="images/calaquima10.jpg" alt="CaLaQuima10"></div>
+                  <div class="col-md-12"><img src="images/calaquima11.jpg" alt="CaLaQuima11"></div>
+                  <div class="col-md-12"><img src="images/calaquima12.jpg" alt="CaLaQuima12"></div>
+                  <div class="col-md-12"><img src="images/calaquima13.jpg" alt="CaLaQuima13"></div>
+                  <div class="col-md-12"><img src="images/calaquima14.jpg" alt="CaLaQuima14"></div>
                 </div>
               </div>
             </div>
@@ -318,59 +232,31 @@
         <section class="white-bg" id="calamaria">
           <div class="container">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-8">
+                <div class="owl-carousel2">
+                  <div class="col-md-12"><img src="images/calaquima01.jpg" alt="CaLaQuima01"></div>
+                  <div class="col-md-12"><img src="images/calaquima02.jpg" alt="CaLaQuima02"></div>
+                  <div class="col-md-12"><img src="images/calaquima03.jpg" alt="CaLaQuima03"></div>
+                  <div class="col-md-12"><img src="images/calaquima04.jpg" alt="CaLaQuima04"></div>
+                  <div class="col-md-12"><img src="images/calaquima05.jpg" alt="CaLaQuima05"></div>
+                  <div class="col-md-12"><img src="images/calaquima06.jpg" alt="CaLaQuima06"></div>
+                  <div class="col-md-12"><img src="images/calaquima07.jpg" alt="CaLaQuima07"></div>
+                  <div class="col-md-12"><img src="images/calaquima08.jpg" alt="CaLaQuima08"></div>
+                  <div class="col-md-12"><img src="images/calaquima09.jpg" alt="CaLaQuima09"></div>
+                  <div class="col-md-12"><img src="images/calaquima10.jpg" alt="CaLaQuima10"></div>
+                  <div class="col-md-12"><img src="images/calaquima11.jpg" alt="CaLaQuima11"></div>
+                  <div class="col-md-12"><img src="images/calaquima12.jpg" alt="CaLaQuima12"></div>
+                  <div class="col-md-12"><img src="images/calaquima13.jpg" alt="CaLaQuima13"></div>
+                  <div class="col-md-12"><img src="images/calaquima14.jpg" alt="CaLaQuima14"></div>
+                </div>
+              </div>
+              <div class="col-md-4">
                 <h3 class="title-small">
                   <span>Ca la Maria</span>
                 </h3>
                 <p class="content-detail">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                 </p>
-              </div>
-              <div class="col-md-9 content-right">
-                <!--SKILLST-->
-                <div class="skillst">
-                  <div class="skillbar" data-percent="78%">
-                    <div class="title head-sm">
-                      HTML 5
-                    </div>
-                    <div class="count-bar">
-                      <div class="count"></div>
-                    </div>
-                  </div>
-                  <div class="skillbar" data-percent="91%">
-                    <div class="title head-sm">
-                      CSS 4
-                    </div>
-                    <div class="count-bar">
-                      <div class="count"></div>
-                    </div>
-                  </div>
-                  <div class="skillbar" data-percent="58%">
-                    <div class="title head-sm">
-                      jQuery
-                    </div>
-                    <div class="count-bar">
-                      <div class="count"></div>
-                    </div>
-                  </div>
-                  <div class="skillbar" data-percent="63%">
-                    <div class="title head-sm">
-                      PHP
-                    </div>
-                    <div class="count-bar">
-                      <div class="count"></div>
-                    </div>
-                  </div>
-                  <div class="skillbar" data-percent="95%">
-                    <div class="title head-sm">
-                      Photoshop
-                    </div>
-                    <div class="count-bar">
-                      <div class="count"></div>
-                    </div>
-                  </div>
-                </div>
-                <!--/.SKILLST END-->
               </div>
             </div>
           </div>
@@ -381,116 +267,29 @@
         <section class="grey-bg" id="calanuria">
           <div class="container">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-8">
+                <div class="owl-carousel2">
+                  <div class="col-md-12"><img src="images/calanuria01.jpg" alt="CaLaNuria01"></div>
+                  <div class="col-md-12"><img src="images/calanuria02.jpg" alt="CaLaNuria02"></div>
+                  <div class="col-md-12"><img src="images/calanuria03.jpg" alt="CaLaNuria03"></div>
+                  <div class="col-md-12"><img src="images/calanuria04.jpg" alt="CaLaNuria04"></div>
+                  <div class="col-md-12"><img src="images/calanuria05.jpg" alt="CaLaNuria05"></div>
+                  <div class="col-md-12"><img src="images/calanuria06.jpg" alt="CaLaNuria06"></div>
+                  <div class="col-md-12"><img src="images/calanuria07.jpg" alt="CaLaNuria07"></div>
+                  <div class="col-md-12"><img src="images/calanuria08.jpg" alt="CaLaNuria08"></div>
+                  <div class="col-md-12"><img src="images/calanuria09.jpg" alt="CaLaNuria09"></div>
+                  <div class="col-md-12"><img src="images/calanuria10.jpg" alt="CaLaNuria10"></div>
+                  <div class="col-md-12"><img src="images/calanuria11.jpg" alt="CaLaNuria11"></div>
+                  <div class="col-md-12"><img src="images/calanuria12.jpg" alt="CaLaNuria12"></div>
+                </div>
+              </div>
+              <div class="col-md-4">
                 <h3 class="title-small">
                   <span>Ca la Núria</span>
                 </h3>
                 <p class="content-detail">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                 </p>
-              </div>
-              <div class="col-md-9 content-right">
-                <div class="row">
-                  <ul class="listing-item">
-                    <li>
-                      <div class="col-md-6 col-sm-6">
-                        <div class="wrap-card">
-                          <div class="card">
-                            <h2 class="year">
-                              2002 - 2005
-                            </h2>
-                            <p class="job">
-                              Information System
-                            </p>
-                            <p class="company">
-                              Telkom University
-                            </p>
-                            <hr>
-                            <div class="text-detail">
-                              <p>
-                                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="col-md-6 col-sm-6">
-                        <div class="wrap-card">
-                          <div class="card">
-                            <h2 class="year">
-                              2005 - 2007
-                            </h2>
-                            <p class="job">
-                              DKV
-                            </p>
-                            <p class="company">
-                              UNIKOM
-                            </p>
-                            <hr>
-                            <div class="text-detail">
-                              <p>
-                                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                  <ul class="listing-item">
-                    <li>
-                      <div class="col-md-6 col-sm-6">
-                        <div class="wrap-card">
-                          <div class="card">
-                            <h2 class="year">
-                              2007 - 2009
-                            </h2>
-                            <p class="job">
-                              Magister DKV 
-                            </p>
-                            <p class="company">
-                              ITB
-                            </p>
-                            <hr>
-                            <div class="text-detail">
-                              <p>
-                                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="col-md-6 col-sm-6">
-                        <div class="wrap-card">
-                          <div class="card">
-                            <h2 class="year">
-                              2009 - 2010
-                            </h2>
-                            <p class="job">
-                              Typhography Magister
-                            </p>
-                            <p class="company">
-                              Florida University
-                            </p>
-                            <hr>
-                            <div class="text-detail">
-                              <p>
-                                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanita per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-
-                </div>
               </div>
             </div>
           </div>
