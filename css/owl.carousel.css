@@ -26,6 +26,8 @@
 }
 .owl-carousel2{
 	padding-bottom: 20px;
+	display: flex;
+	width: auto;
 }
 .owl-carousel2 .owl-controls .owl-page span{
 	background: #2f2f2f !important;
@@ -42,7 +44,10 @@
 	-o-transition: height 500ms ease-in-out;
 	transition: height 500ms ease-in-out;
 }
-	
+.item-owl {
+	width: auto;
+	padding: 10px;
+  }
 .owl-carousel .owl-item{
 	float: left;
 }

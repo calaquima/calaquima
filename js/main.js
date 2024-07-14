@@ -8,8 +8,8 @@
     //masonry
     $('.grid').masonry({
       itemSelector: '.grid-item'
-      
-    });    
+    });
+
   });
 
 
@@ -35,8 +35,8 @@
         window.location.hash = target;
         $(document).on("scroll", onScroll);
       });
+  
     });
-
     
     //scroll js
     smoothScroll.init({
@@ -93,7 +93,6 @@
         strings: ["Apartaments turístics"],
         typeSpeed: 100,
         backDelay: 900,
-        // loop
         loop: false
     });
 
@@ -129,7 +128,6 @@
 
     //contact
     $('input').blur(function() {
-
       // check if the input has any value (if we've typed into it)
       if ($(this).val())
         $(this).addClass('used');
@@ -137,27 +135,6 @@
         $(this).removeClass('used');
     });
 
-    //pop up porfolio
-    $('.portfolio-image li a').magnificPopup({
-      type: 'image',
-      gallery: {
-        enabled: true
-      }
-      // other options
-    });
-    
-    //Skill
-    jQuery('.skillbar').each(function() {
-      jQuery(this).appear(function() {
-        jQuery(this).find('.count-bar').animate({
-          width:jQuery(this).attr('data-percent')
-        },3000);
-        var percent = jQuery(this).attr('data-percent');
-        jQuery(this).find('.count').html('<span>' + percent + '</span>');
-      });
-    }); 
-
-  
   });
   
     
