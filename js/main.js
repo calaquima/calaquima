@@ -4,14 +4,8 @@
     //preloader
     $("#status").fadeOut(); // will first fade out the loading animation
     $("#preloader").delay(450).fadeOut("slow"); // will fade out the white DIV that covers the website.
-    
-    //masonry
-    $('.grid').masonry({
-      itemSelector: '.grid-item'
-    });
 
   });
-
 
   $(document).ready(function(){  
 
@@ -28,14 +22,19 @@
       $(this).addClass('active');
  
       var target = this.hash;
-      $target = $(target);
+      var $target = $(target);
       $('html, body').stop().animate({
-        'scrollTop': $target.offset().top+2
+        'scrollTop': $target.offset().top + 2
       }, 500, 'swing', function () {
         window.location.hash = target;
         $(document).on("scroll", onScroll);
       });
-  
+
+      // Close the menu when a link is clicked
+      if (isOpen) {
+        toggleMenu();
+      }
+
     });
     
     //scroll js
@@ -72,7 +71,17 @@
         if( isOpen && target !== openbtn ) {
           toggleMenu();
         }
-      } );
+      });
+
+      // Add click event to close the menu when a menu item is clicked
+      var menuItems = document.querySelectorAll('.menu-list a');
+      menuItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+          if (isOpen) {
+            toggleMenu();
+          }
+        });
+      });
     }
 
     function toggleMenu() {
@@ -87,44 +96,12 @@
 
     inits();
 
-
-    //typed js
-    $(".typed").typed({
-        strings: ["Apartaments turístics"],
-        typeSpeed: 100,
-        backDelay: 900,
-        loop: false
-    });
-
-    //owl carousel
-    $('.owl-carousel').owlCarousel({
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
- 
-      items : 1,
-      itemsDesktop : [1199,1],
-      itemsDesktopSmall : [979,1],
-      itemsTablet : [768,1],
-      itemsMobile : [479,1],
-
-      // CSS Styles
-      baseClass : "owl-carousel",
-      theme : "owl-theme"
-    });
-
-    $('.owl-carousel2').owlCarousel({
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
- 
-      items : 1,
-      itemsDesktop : [1199,1],
-      itemsDesktopSmall : [979,1],
-      itemsTablet : [768,1],
-      itemsMobile : [479,1],
-      autoPlay : false,
-
-      // CSS Styles
-      baseClass : "owl-carousel",
-      theme : "owl-theme"
-    });
+    // //typed js
+    // $(".typed").typed({
+    //   strings: ["Apartaments turístics"],
+    //   typeSpeed: 100,
+    //   loop: false
+    // });
 
     //contact
     $('input').blur(function() {
@@ -136,7 +113,6 @@
     });
 
   });
-  
     
   //header
   function inits() {

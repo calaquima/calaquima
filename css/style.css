@@ -44,6 +44,38 @@ TABLE OF CONTENTS:
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.carousel-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            background-color: #f0f0f0; /* Optional: Background color for better visibility */
+        }
+
+        /* Carousel container */
+        .main-carousel {
+            width: 100%; /* Set width for the carousel container */
+            max-width: 1200px; /* Optional: Max width for larger screens */
+            height: 300px; /* Set the height for all images */
+        }
+
+        /* Carousel cells */
+        .carousel-cell {
+            width: auto;
+            height: 100%; /* Ensure the height is consistent */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Carousel images */
+        .carousel-cell img {
+            height: 100%;
+            width: auto; /* Adjust width based on image size */
+            display: block;
+            margin: 0px 5px 0px 0px;
+        }
 body,
 html {
   left: 0;
@@ -469,7 +501,7 @@ p {
   line-height: 40px;
   letter-spacing: 0.6px;
 }
-#home .typed {
+#home .subt {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -548,11 +580,6 @@ p {
   30%  { top:8px; opacity: 1;}
   100% { top:16px; opacity: 0;}
 }
-
-
-/*----- typed effect ---*/
-.typed-cursor{ opacity: 0;}
-
 
 /*----------------------------------------- 7) Sections --------------------------------------------------*/
 /*---------- a. portfolio -----------*/
